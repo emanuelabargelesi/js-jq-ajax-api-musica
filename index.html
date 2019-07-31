@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ex-dischi-musicali</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="logo" />
+    </div>
+
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item jazz">Jazz</a>
+      <a class="dropdown-item">Rock</a>
+      <a class="dropdown-item">Pop</a>
+    </div>
+  </div>
+  </header>
+
+
+
+
+  <div class="cds-container container">  </div>
+
+    <!-- Disco ad esempio -->
+    <script id="disk-list" type="text/x-handlebars-template">
+
+    <div class="cd" datagenere="{{genre}}">
+      <img src="{{poster}}" alt="">
+      <h3>{{title}}</h3>
+      <span class="author">{{author}}</span>
+      <span class="year">{{year}}</span>
+      <span class="genre">{{genre}}</span>
+    </div>
+
+
+</script>
+
+
+  <script src="main.js" charset="utf-8"></script>
+
+</body>
+
+</html>
